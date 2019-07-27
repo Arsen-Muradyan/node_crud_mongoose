@@ -1,0 +1,11 @@
+<br>
+<% if (posts.length > 0) {%>
+
+<div class="collection">
+  <% posts.forEach(post => {%>
+    <a href="/posts/<%= post.id%>" class="collection-item"><%= post.title %></a>
+  <% })%>
+</div>
+<% }else {%>
+  <p>No Posts Found</p>
+<% } %>
